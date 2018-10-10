@@ -2,8 +2,7 @@
 # for more info: https://coverage.readthedocs.io/en/coverage-4.4.1/config.html
 [run]
 omit =
-    loc/pkg/*
-    loc/zzz_ezinstall.py
+    loc/compat.py
 
 [report]
 # Regexes for lines to exclude from consideration

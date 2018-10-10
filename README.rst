@@ -1,4 +1,3 @@
-
 .. image:: https://readthedocs.org/projects/loc/badge/?version=latest
     :target: https://loc.readthedocs.io/?badge=latest
     :alt: Documentation Status
@@ -52,7 +51,21 @@
 Welcome to ``loc`` Documentation
 ==============================================================================
 
-Documentation for ``loc``.
+``loc`` is a library that simplify the software localization.
+
+Usage:
+
+.. code-block:: python
+
+    >>> from loc import LocDict
+    >>> data = [
+            {"en-US": "Yes", "zh-CN": "是"},
+            {"en-US": "No", "zh-CN": "否"},
+        ]
+
+    >>> ld = LocDict(data=data)
+    >>> ld.trans_to("Yes", dst_loc="zh-CN")
+    是
 
 
 .. _install:
