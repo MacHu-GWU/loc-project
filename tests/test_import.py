@@ -7,7 +7,9 @@ from pytest import raises, approx
 
 def test():
     import loc
-    pass
+    loc.Locale
+    loc.LocDict
+    loc.locale_list
 
 
 if __name__ == "__main__":

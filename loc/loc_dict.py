@@ -84,7 +84,8 @@ class LocDict(object):
         for locale in self.locales:
             if value in self.data[locale]:
                 return locale
-        raise ValueError
+        msg = "Can't detect language of '%s'" % value
+        raise ValueError(msg)
 
     def trans_to(self, value, dst_loc, src_loc=None):
         """
